@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Header = () => {
   const [searchinput, setSearchInput] = useState("");
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState({
+    longitude: "",
+    latitude: "",
+  });
 
   const handleSearch = (e) => {
     const value = e.target.value;
@@ -31,8 +35,6 @@ const Header = () => {
       alert("GeoLocation is not supported by this browser");
     }
   };
-  console.log(location);
-  
 
   return (
     <div className="w-[75vw] mx-auto max-sm:w-[90vw]">
@@ -53,7 +55,12 @@ const Header = () => {
             className="w-full border border-stone-700 py-1.5 px-1.5 rounded-lg outline-none"
           />
           <button className="flex border border-stone-700 rounded-lg p-1.5 cursor-pointer hover:bg-stone-800">
-            <span className="flex material-symbols-outlined" onClick={getUserLocation}>my_location</span>
+            <span
+              className="flex material-symbols-outlined"
+              onClick={getUserLocation}
+            >
+              my_location
+            </span>
           </button>
         </div>
       </div>
