@@ -14,7 +14,7 @@ const getByName = async () => {
 
 const getByPoints = async () => {
     try {
-        let req = await fetch(`${baseurl}/current.json?key${apiKey}&q=`)
+        let req = await fetch(`${baseurl}/current.json?key${apiKey}`)
     } catch (error) {
         
     }

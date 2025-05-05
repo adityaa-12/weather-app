@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 const Header = () => {
   const [searchinput, setSearchInput] = useState("");
@@ -37,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-[75vw] mx-auto max-sm:w-[90vw]">
+    <div className="w-[50vw] mx-auto max-sm:w-[90vw]">
       <div id="header" className="flex py-3.5 w-full">
         <div
           id="search-bar"
