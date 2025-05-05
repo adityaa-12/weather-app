@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import Header from "./components/Header";
 
 const App = () => {
+  
   return (
-    <div className='bg-black text-white'>
-      this is app
-    </div>
-  )
-}
+    <>
+      <div className="w-screen h-screen bg-stone-900 text-white">
+        <Header />
+      </div>
+    </>
+  );
+};
 
 export default App;
