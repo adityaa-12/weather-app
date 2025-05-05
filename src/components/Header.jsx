@@ -36,8 +36,8 @@ const Header = () => {
   };
 
   return (
-    <div className="w-[50vw] mx-auto max-sm:w-[90vw]">
-      <div id="header" className="flex py-3.5 w-full">
+    <div className="w-[55vw] mx-auto max-sm:w-[90vw]">
+      <div id="header" className="flex py-3.5 w-full font-medium">
         <div
           id="search-bar"
           className="w-full flex flex-row items-center gap-2.5"
