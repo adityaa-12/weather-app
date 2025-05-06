@@ -5,11 +5,13 @@ import Suggestion from "./components/Suggestion";
 import Favorite from "./components/Favorite";
 import Loading from "./components/Loading";
 import { WeatherProvider } from "./context/weatherContext";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const [loading, setLoading] = useState(true);
   return (
     <WeatherProvider>
+      <Analytics />
       <div>
         <Header set={setLoading} />
         {!loading && <ForeCast />}
