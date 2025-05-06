@@ -99,7 +99,7 @@ const Header = ({ set }) => {
           </button>
           <a href="https://github.com/adityaa-12/weather-app" target="_blank" className="flex border border-stone-300 rounded-lg p-1.5 cursor-pointer hover:bg-stone-200">
             <span>
-              <img src="/src/assets/github.png" className="w-8" />
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" className="w-8" />
             </span>
           </a>
         </div>
