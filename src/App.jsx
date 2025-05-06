@@ -1,22 +1,19 @@
 import React from "react";
 import Header from "./components/Header";
-import Temperature from "./components/Temperature";
 import ForeCast from "./components/ForeCast";
 import Suggestion from "./components/Suggestion";
 import Favorite from "./components/Favorite";
+import Footer from "./components/Footer";
 
 const App = () => {
-  
   return (
     <>
       <div>
-        <Header />  
-        <div className="flex w-[55vw] max-sm:w-[90vw] max-md:flex-col mx-auto flex-row items-start gap-2.5">
-        <Temperature />
+        <Header />
         <ForeCast />
-        </div>
         <Suggestion />
         <Favorite />
+        <Footer />
       </div>
     </>
   );

@@ -36,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-[55vw] mx-auto max-sm:w-[90vw]">
+    <div className="w-[35vw] mx-auto max-sm:w-[90vw]">
       <div id="header" className="flex py-3.5 w-full font-medium">
         <div
           id="search-bar"
@@ -51,9 +51,9 @@ const Header = () => {
             onChange={handleSearch}
             onKeyDown={handleKeyDown}
             autoComplete="off"
-            className="w-full border border-stone-700 py-1.5 px-1.5 rounded-lg outline-none"
+            className="w-full border border-stone-300 py-1.5 px-1.5 rounded-lg outline-none"
           />
-          <button className="flex border border-stone-700 rounded-lg p-1.5 cursor-pointer hover:bg-stone-800">
+          <button className="flex border border-stone-300 rounded-lg p-1.5 cursor-pointer hover:bg-stone-200">
             <span
               className="flex material-symbols-outlined"
               onClick={getUserLocation}
