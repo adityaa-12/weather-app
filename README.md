@@ -1,49 +1,59 @@
-``temperature card
+# Weather App
 
-current temp 
-feels like temp
-weather desc
-weather icon
-wind
-location
-humidity
-uv_index
-last updated
+A modern weather app built with **React**, **JavaScript**, and **Tailwind CSS**. It displays the current weather, shows helpful daily tips, and has a clean, responsive design. Weather data is powered by the [WeatherAPI](https://www.weatherapi.com/).
 
-``weather other details
+---
 
-Today’s Forecast (from forecastDay[0])
+###  Features
 
-Max Temp (maxtemp_c)
+- ✅ Live current weather updates
+- ✅ Smart tips based on weather conditions (like rain, snow, or sunshine)
+- ✅ Responsive design for mobile and desktop
+- ✅ Simple and clean UI using Tailwind CSS
+- ✅ Lightweight and fast
 
-Min Temp (mintemp_c)
+---
 
-Avg Temp (avgtemp_c)
+###  Tech Stack
 
-Chance of Rain (daily_chance_of_rain)
+- **React** – Frontend library
+- **Tailwind CSS** – Styling
+- **WeatherAPI** – Weather data source
+- **JavaScript (ES6+)** – Application logic
 
-Chance of Snow (daily_chance_of_snow)
+---
 
-Total Precip (totalprecip_mm)
+###  Getting Started
 
-Max Wind (maxwind_kph)
 
-Sunrise / Sunset
+### 1. Clone the repo
 
-Moonrise / Moonset
+```bash
+git clone https://github.com/your-username/weather-app.git
 
-Moon Phase
+cd weather-app
+```
 
-Forecast Icon + Text (icon, text)
+### 2. Install Dependencies
 
-Additional Current Details
+```bash
+npm install
+```
 
-Pressure (pressure_mb)
+### 3. Add your API Key & API URL
 
-Visibility (vis_km)
+```bash
+VITE_API_KEY = Your API Key
 
-Cloud Cover (cloud)
+VITE_API_URL = Your API URL
 
-Dew Point (dewpoint_c)
+Get your free API key from WeatherAPI.
+```
 
-Gust Speed (gust_kph)
+### 4. Start the app
+
+```
+npm run dev
+
+Then open http://localhost:5173 in your browser to see the app running.
+```
