@@ -35,7 +35,7 @@ const Temperature = () => {
         <div id="temp-other-info" className="mt-3.5 px-0.5 py-0.5 flex flex-col gap-2.5">
           <div id="wrapper" className="flex flex-row justify-between">
             <div id="wind" className="flex flex-row items-center gap-2.5 text-md font-medium">
-              <span><img src="/src/assets/wind.png" className="w-5 h-5 opacity-75" /></span>
+              <span><img src="/src/assets/wind.png" className="w-5 h-5" /></span>
               <p>9 Km/h</p>
             </div>
             <div id="humidity" className="flex flex-row items-center gap-2.5 text-md font-medium">

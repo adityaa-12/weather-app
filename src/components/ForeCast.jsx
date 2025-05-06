@@ -12,11 +12,11 @@
           </div>
 
           {/* First row container */}
-          <div id="container-1" className="flex flex-wrap gap-2">
+          <div id="container-1" className="flex flex-wrap gap-2 w-full">
             <div id="sun" className="flex flex-wrap gap-2">
               <div
                 id="sunrise"
-                className="flex flex-row items-center gap-6 rounded-lg border border-stone-700 px-2.5 py-1.5"
+                className="flex flex-row items-center w-full justify-between rounded-lg border border-stone-700 px-2.5 py-1.5"
               >
                 <div className="font-medium">
                   <p className="text-stone-400">Sunrise</p>

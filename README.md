@@ -1,12 +1,49 @@
-# React + Vite
+``temperature card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+current temp 
+feels like temp
+weather desc
+weather icon
+wind
+location
+humidity
+uv_index
+last updated
 
-Currently, two official plugins are available:
+``weather other details
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Today’s Forecast (from forecastDay[0])
 
-## Expanding the ESLint configuration
+Max Temp (maxtemp_c)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Min Temp (mintemp_c)
+
+Avg Temp (avgtemp_c)
+
+Chance of Rain (daily_chance_of_rain)
+
+Chance of Snow (daily_chance_of_snow)
+
+Total Precip (totalprecip_mm)
+
+Max Wind (maxwind_kph)
+
+Sunrise / Sunset
+
+Moonrise / Moonset
+
+Moon Phase
+
+Forecast Icon + Text (icon, text)
+
+Additional Current Details
+
+Pressure (pressure_mb)
+
+Visibility (vis_km)
+
+Cloud Cover (cloud)
+
+Dew Point (dewpoint_c)
+
+Gust Speed (gust_kph)
