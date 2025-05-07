@@ -6,11 +6,11 @@ A modern weather app built with **React**, **JavaScript**, and **Tailwind CSS**.
 
 ###  Features
 
-- ✅ Live current weather updates
-- ✅ Smart tips based on weather conditions (like rain, snow, or sunshine)
-- ✅ Responsive design for mobile and desktop
-- ✅ Simple and clean UI using Tailwind CSS
-- ✅ Lightweight and fast
+- Live current weather updates
+- Smart tips based on weather conditions (like rain, snow, or sunshine)
+- Responsive design for mobile and desktop
+- Simple and clean UI using Tailwind CSS
+- Lightweight and fast
 
 ---
 
