@@ -23,8 +23,6 @@ A modern weather app built with **React**, **JavaScript**, and **Tailwind CSS**.
 
 ---
 
-###  Getting Started
-
 
 ### 1. Clone the repo
 
