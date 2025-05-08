@@ -23,7 +23,7 @@ const ForeCast = () => {
       <div id="wrapper">
         <div
           id="main-container"
-          className="px-2.5 py-2.5 border border-stone-300 rounded-lg"
+          className="px-2.5 py-2.5 border border-stone-800 rounded-lg"
         >
           <div
             id="temp-box"
@@ -37,7 +37,7 @@ const ForeCast = () => {
                 >
                   {weatherData.city},<span>{weatherData.country}</span>
                 </p>
-                <p className="font-medium text-stone-600 text-lg max-sm:text-sm text-wrap">
+                <p className="font-medium text-stone-400 text-lg max-sm:text-sm text-wrap">
                   {parsedDate(weatherData.date)}
                 </p>
               </div>
@@ -65,7 +65,7 @@ const ForeCast = () => {
             </div>
           </div>
 
-          <hr className="border-stone-200 my-1.5" />
+          <hr className="border-stone-800 my-1.5" />
 
           <div id="container-1" className="px-2.5 py-2.5 flex flex-col gap-2.5">
             <div id="head">

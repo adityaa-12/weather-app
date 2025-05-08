@@ -87,9 +87,9 @@ const Header = ({ set }) => {
             onChange={handleSearch}
             onKeyDown={handleKeyDown}
             autoComplete="off"
-            className="w-full border border-stone-300 py-1.5 px-1.5 rounded-lg outline-none"
+            className="w-full border border-stone-800 py-1.5 px-1.5 rounded-lg outline-none"
           />
-          <button className="flex border border-stone-300 rounded-lg p-1.5 cursor-pointer hover:bg-stone-200">
+          <button className="flex border border-stone-800 rounded-lg p-1.5 cursor-pointer hover:bg-stone-800">
             <span
               className="flex material-symbols-outlined"
               onClick={getUserLocation}
@@ -97,9 +97,9 @@ const Header = ({ set }) => {
               my_location
             </span>
           </button>
-          <a href="https://github.com/adityaa-12/weather-app" target="_blank" className="flex border border-stone-300 rounded-lg p-1.5 cursor-pointer hover:bg-stone-200">
+          <a href="https://github.com/adityaa-12/weather-app" target="_blank" className="flex border border-stone-800 rounded-lg p-1.5 cursor-pointer hover:bg-stone-800">
             <span>
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" className="w-8" />
+              <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" className="w-8" />
             </span>
           </a>
         </div>

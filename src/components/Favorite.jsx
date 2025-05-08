@@ -52,13 +52,13 @@ const Favorite = ({ set }) => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Your Favorite Locations.."
-              className="border border-stone-300 px-2.5 py-2 rounded-md w-full outline-none"
+              className="border border-stone-800 px-2.5 py-2 rounded-md w-full outline-none"
             />
           </div>
           <div id="btn">
             <button
               onClick={() => pushData(input)}
-              className="border border-stone-300 px-4.5 py-2 rounded-lg cursor-pointer hover:bg-stone-200 transition-all"
+              className="border border-stone-800 px-4.5 py-2 rounded-lg cursor-pointer hover:bg-stone-800 transition-all"
             >
               Save
             </button>
