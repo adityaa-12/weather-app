@@ -74,7 +74,7 @@ const Favorite = ({ set }) => {
               <div
                 id="f-loc"
                 key={i}
-                className="flex flex-row font-medium justify-between border border-stone-200 rounded-md px-2.5 py-1.5"
+                className="flex flex-row font-medium justify-between border border-stone-800 rounded-md px-2.5 py-1.5"
               >
                 <p>{loc}</p>
                 <div id="wrapper">
