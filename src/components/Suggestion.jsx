@@ -13,7 +13,7 @@ const Suggestion = () => {
         <span className="flex">
           <span className="flex material-symbols-outlined">lightbulb_2</span>
         </span>
-        <p>{getTips(weatherData.temp_desc)}</p>
+        <p>{getTips(weatherData?.temp_desc || "Cloudy")}</p>
       </div>
     </div>
   );

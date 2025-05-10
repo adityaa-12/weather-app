@@ -5,6 +5,8 @@ const ForeCast = () => {
   const { weatherData } = useWeather();
 
   const parsedDate = (dateString) => {
+    if (dateString == undefined) return new Date().toUTCString();
+
     const date = new Date(dateString);
 
     const options = {
@@ -35,20 +37,24 @@ const ForeCast = () => {
                   className="font-medium text-xl max-sm:text-lg flex flex-row gap-1"
                   id="city"
                 >
-                  {weatherData.city},<span>{weatherData.country}</span>
+                  {weatherData?.city || "Mumbai"},
+                  <span>{weatherData?.country || "India"}</span>
                 </p>
                 <p className="font-medium text-stone-400 text-lg max-sm:text-sm text-wrap">
-                  {parsedDate(weatherData.date)}
+                  {parsedDate(weatherData?.date)}
                 </p>
               </div>
               <div id="temp-icon" className="flex flex-col gap-2.5 mt-1.5">
                 <img
-                  src={weatherData.icon_url.replace("64x64", "128x128")}
+                  src={
+                    weatherData?.icon_url.replace("64x64", "128x128") ||
+                    "not found"
+                  }
                   className="w-24 h-24"
                   alt="Weather icon"
                 />
                 <p className="font-medium text-xl mt-1.5 max-sm:text-lg">
-                  {weatherData.temp_desc}
+                  {weatherData?.temp_desc || "Cloudy"}
                 </p>
               </div>
             </div>
@@ -58,7 +64,7 @@ const ForeCast = () => {
                 className="flex flex-row items-start justify-start"
               >
                 <p className="font-semibold text-6xl max-sm:text-4xl">
-                  {weatherData.temp}
+                  {weatherData?.temp || "32"}
                 </p>
                 <span className="font-semibold text-xl">°C</span>
               </div>
@@ -84,7 +90,7 @@ const ForeCast = () => {
               >
                 <p>Feels like</p>
                 <p className="font-semibold">
-                  : {weatherData.feelslike}
+                  : {weatherData?.feelslike || 12.9}
                   <span>°C</span>
                 </p>
               </div>
@@ -93,7 +99,9 @@ const ForeCast = () => {
                 className="flex flex-row gap-1.5 font-medium items-center text-lg"
               >
                 <p>Humidity</p>:
-                <p className="font-semibold">{weatherData.humidity}%</p>
+                <p className="font-semibold">
+                  {weatherData?.humidity || "45"}%
+                </p>
               </div>
             </div>
 
@@ -107,7 +115,7 @@ const ForeCast = () => {
               >
                 <p>Wind</p>:
                 <p className="font-semibold">
-                  {weatherData.wind}
+                  {weatherData?.wind || "10.2"}
                   <span> Km/h</span>
                 </p>
               </div>
@@ -117,7 +125,7 @@ const ForeCast = () => {
               >
                 <p>Dew Point</p>:
                 <p className="font-semibold">
-                  {weatherData.dew_point}
+                  {weatherData?.dew_point || "8.9"}
                   <span>°C</span>
                 </p>
               </div>
@@ -133,7 +141,7 @@ const ForeCast = () => {
               >
                 <p>UV Index</p>:
                 <p className="font-semibold">
-                  <span>{weatherData.uv}</span>
+                  <span>{weatherData?.uv || "0"}</span> out of 10
                 </p>
               </div>
               <div
@@ -142,7 +150,7 @@ const ForeCast = () => {
               >
                 <p>Pressure</p>:
                 <p className="font-semibold">
-                  {weatherData.pressure}
+                  {weatherData?.pressure || "950"}
                   <span> mb</span>
                 </p>
               </div>
