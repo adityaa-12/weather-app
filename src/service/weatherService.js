@@ -1,7 +1,7 @@
 const baseurl = import.meta.env.VITE_API_URL;
 const apiKey = import.meta.env.VITE_API_KEY;
 
-export const getByName = async (query, setWeatherData) => {
+export const getByName = async (query,setWeatherData ) => {
   try {
     let req = await fetch(`${baseurl}/current.json?key=${apiKey}&q=${query}`);
     let res = await req.json();
@@ -21,6 +21,6 @@ export const getByName = async (query, setWeatherData) => {
     };
     setWeatherData(data);
   } catch (error) {
-    alert("Internal Server Error!");
+   console.log("Error");
   }
 };
